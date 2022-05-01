@@ -6,7 +6,7 @@ import TextForm from './components/TextForm';
 function App() {
   return (
     <>
-      <Navbar title="Text Formatter" about="About us"/>
+      <Navbar title="Text Formatter" about="Privacy"/>
       <div className="container">
         <TextForm heading="Text Formatter" />
       </div>

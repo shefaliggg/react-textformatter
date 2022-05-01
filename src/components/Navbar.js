@@ -19,6 +19,10 @@ export default function Navbar(props) {
             <a className="nav-link" href="/">{props.about}</a>
           </li>
         </ul>
+        <div className="form-check form-switch">
+          <input className="form-check-input" type="checkbox" id="flexSwitchCheckChecked" />
+          <label className="form-check-label" htmlFor="flexSwitchCheckChecked">Dark Mode</label>
+        </div>
       </div>
     </div>
   </nav>
