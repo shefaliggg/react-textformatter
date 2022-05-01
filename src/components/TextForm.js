@@ -38,11 +38,14 @@ export default function TextForm(props) {
         document.getElementById("myBox").value = newstr;
     }
 
+    const txtstyle = {backgroundColor:props.mode=='light'?'white':'black',
+    color:props.mode=='light'?'black':'white'};
+
     return (
         <>
             <div className="mb-3 my-3 container">
             <h1>{props.heading}</h1>
-            <textarea className="form-control" id="myBox" onChange={handleonChange} rows="8" value={text}></textarea>
+            <textarea className="form-control" id="myBox" style={txtstyle} onChange={handleonChange} rows="8" value={text}></textarea>
             <button type="button" className="btn btn-primary my-3" onClick={handleupClick}>Convert to Uppercase</button>
             <button type="button" className="btn btn-primary my-3 mx-3" onClick={handleloClick}>Convert to Lowercase</button>
             <button type="button" className="btn btn-primary my-3" onClick={handleclClick}>Clear Text</button>
